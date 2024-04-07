@@ -34,11 +34,6 @@ npm install @upstash/analytics @upstash/redis
 import { Analytyics } from "@upstash/analytics";
 import { Redis } from "@upstash/redis";
 
-const analytics = new Analytics({
-  redis: Redis.fromEnv(),
-  window: "1d",
-});
-```
 
 
 5. Ingest some events
