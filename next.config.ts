@@ -7,10 +7,12 @@ import { withContentlayer } from "next-contentlayer";
 
 const nextConfig = {
     pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
-    // experimental: {
-    //     mdxRs: true,
-    // },
+    experimental: {
+        mdxRs: true,
+    },
     output: 'export',
 };
+
+console.log("nextConfig", nextConfig);
 
 export default withContentlayer(nextConfig as any);
