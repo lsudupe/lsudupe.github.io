@@ -52,7 +52,7 @@ export default function Home() {
                  className="text-zinc-500 hover:text-zinc-300">
                   <FaGithub size={30}/>
               </a>
-              <a href="mailto:lsudupe@gmail.com" aria-label="Email" className="text-zinc-500 hover:text-zinc-300">
+              <a href="mailto:sudupelaura@gmail.com" aria-label="Email" className="text-zinc-500 hover:text-zinc-300">
                   <FaEnvelope size={30}/>
               </a>
               <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" aria-label="CV"
