@@ -39,7 +39,7 @@ export default function Home() {
               className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"/>
           <div className="my-16 text-center animate-fade-in">
               <h2 className="text-sm text-zinc-500 ">
-                 Hi! I'm Laura, and this is my portfolio. Find more about me here!
+                 Hi! I'm Laura, a Bioinformatics Professional currently engaged in research! Find out more about me or feel free to reach out with the options below!
               </h2>
           </div>
           {/* Icons section */}
