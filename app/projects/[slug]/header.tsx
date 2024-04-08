@@ -18,15 +18,9 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 	const [isIntersecting, setIntersecting] = useState(true);
 
 	const links: { label: string; href: string }[] = [];
-	if (project.repository) {
-		links.push({
-			label: "GitHub",
-			href: `https://github.com/${project.repository}`,
-		});
-	}
 	if (project.url) {
 		links.push({
-			label: "Website",
+			label: "Paper",
 			href: project.url,
 		});
 	}
@@ -67,24 +61,15 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 								views,
 							)}
 						</span>
-						<Link target="_blank" href="https://twitter.com/chronark_">
-							<Twitter
-								className={`w-6 h-6 duration-200 hover:font-medium ${
-									isIntersecting
-										? " text-zinc-400 hover:text-zinc-100"
-										: "text-zinc-600 hover:text-zinc-900"
-								} `}
-							/>
-						</Link>
-						<Link target="_blank" href="https://github.com/chronark">
-							<Github
-								className={`w-6 h-6 duration-200 hover:font-medium ${
-									isIntersecting
-										? " text-zinc-400 hover:text-zinc-100"
-										: "text-zinc-600 hover:text-zinc-900"
-								} `}
-							/>
-						</Link>
+						{/*<Link target="_blank" href="https://github.com/chronark">*/}
+						{/*	<Github*/}
+						{/*		className={`w-6 h-6 duration-200 hover:font-medium ${*/}
+						{/*			isIntersecting*/}
+						{/*				? " text-zinc-400 hover:text-zinc-100"*/}
+						{/*				: "text-zinc-600 hover:text-zinc-900"*/}
+						{/*		} `}*/}
+						{/*	/>*/}
+						{/*</Link>*/}
 					</div>
 
 					<Link
